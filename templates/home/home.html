@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+  <title>International Conference</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'sir/css/open-iconic-bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'sir/css/animate.css' %}">
+
+  <link rel="stylesheet" href="{% static 'sir/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'sir/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'sir/css/magnific-popup.css' %}">
+
+  <link rel="stylesheet" href="{% static 'sir/css/aos.css' %}">
+
+  <link rel="stylesheet" href="{% static 'sir/css/ionicons.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'sir/css/bootstrap-datepicker.css' %}">
+  <link rel="stylesheet" href="{% static 'sir/css/jquery.timepicker.css' %}">
+
+
+  <link rel="stylesheet" href="{% static 'sir/css/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'sir/css/icomoon.css' %}">
+  <link rel="stylesheet" href="{% static 'sir/css/style.css' %}">
+  
+  <style>
+    .pune
+  {
+    color: white;
+  }
+  .address
+  {
+    color:white;
+   
+  }
+  .special
+  {
+    color:white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .welcome
+  {
+    color: black;
+    font-family: arial;
+    font-size:18px;
+     margin-left: 163px;
+   
+  }
+  .welcometext
+  {
+    word-wrap:break-word;
+    margin-left: 163px;
+    margin-top: -28px;
+    font-size: 21px;
+  
+  }
+  .aboutpdea
+  {
+   
+    word-wrap:inherits;
+    margin-left: 163px;
+    margin-top: -28px;
+    font-size: 21px;
+  
+  
+  }
+  #sharadpawar
+  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -885px;
+    margin-top: 9px;
+  }
+  #sharadpawartext
+  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 09px;
+    font-weight: bold;
+   margin-left: -888px;
+    margin-top: 11px; 
+  }
+  #ajitpawar
+  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -293px;
+    margin-top: -129px
+  }
+  #ajitpawartext
+  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    margin-left: -289px;
+    margin-top: 15px;
+  }
+  #supriya
+  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 310px;
+    margin-top: -103px
+  }
+  #supriyatext
+  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 296px;
+  }
+  #sunetra
+  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 700px;
+    margin-top: -114px;
+    margin-right: -208px;
+  }
+  #sunetratext
+  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 721px;
+    margin-right: -159px;
+  }
+  .uniname
+  {
+    font-family: Arial;
+    color: gray;
+    font-size: 22px;
+    margin-right: 319px;
+    margin-left: -245px;
+  }
+  .pdeaname
+  {
+    font-family: Arial;
+    color: gray;
+    font-size: 22px;
+    margin-left: 181px;
+    margin-right: -319px;
+    margin-top: -65px;
+  }
+  .Chief-Patron
+  {
+    font-family: Arial;
+    
+    font-size: 34px;
+    
+    
+  }
+  .t
+  {
+    color: white;
+  }
+  .event
+  {
+    color:grey;
+  }
+  #gholapimage
+  {
+   border-radius: 45px;
+   margin-left:67px;
+   
+  }
+
+  
+</style>
+
+  </style>
+
+  <script>
+    (function () {
+      $('a.nav-item ').on('click', function (e) {
+        e.preventDefault();
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+      });
+    }());
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <img src="{{STATIC_URL}} /static/sir/images/pdealogo.jpg" style="height: 80px; width: 98px; margin-left: -97px;" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" ><a href="login" class="nav-link" >Home</a></li>
+          <li class="nav-item"><a href="#" target=".welcome container" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#x2" class="nav-link" style="width: 132px">Chief-Patron</a></li>
+          
+          <li class="nav-item"><a href="dashboard" class="nav-link">Speakers</a></li>
+         
+          <li class="nav-item"><a href="#Commitee" class="nav-link">Committees</a></li>
+          <li class="nav-item"><a href="#scope" class="nav-link">Event</a></li>
+          <li class="nav-item"><a href="#schedules" class="nav-link">Schedule</a></li>
+          <li class="nav-item"><a href="newreg.html" class="nav-link">Registration</a></li>
+          <li class="nav-item"><a href="#linktopay" class="nav-link">Payment</a></li>
+          <li class="nav-item"><a href="#venue1" class="nav-link">Venue</a></li>
+          
+          <img src="{{STATIC_URL}} /static/sir/images/gholap.png" height="80px" width="98px" id="gholapimage"">
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+      <h2 id="home123"></h2>
+
+  <div class="hero-wrap" style="background-image: url('images/babu1.jpg'); background-attachment:fixed;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-8 ftco-animate text-center">
+          <h1 class="mb-4">
+            <marquee scrollamount="15" ></marquee> February 5th–6th, 2019.</marquee>
+          </h1>
+          <h2 class="pune"> Pune District Education Association's</h2>
+          <h2 class="address">Baburaoji Gholap College, New Sangvi-27</h2><br><br>
+          <h2 class="special" style="font-family: cursive;color:cyan ">International Conference<br> On<br> Sustainable Materials for Advanced Research In Technology</h2>
+          <h2 class="special" style="font-family: cursive;color:cyan">SMART 2019</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+<div class="t"   id="x">pf</div>
+  <div class="welcome container" align="justify"><br><br>
+    <h3><b>Welcome :</b></h3>
+  </div><br>
+  <div class="welcometext  container"  align="justify">
+    Dear participants, we are very happy to cordially invite you to gather at two day International Conference on
+    “Sustainable Materials for Advanced Research in Technology (SMART-2019)” to be organized by Pune District Education
+    Association’s Baburaoji Gholap College, Sangvi, Pune 411 027, Maharashtra, India, on 5th and 6th February 2019.
+
+
+  </div>
+  <br><br>
+  <div class="aboutpdea container"  id="about" align="justify">
+    <h3><b>Pune District Education Association :</b></h3>
+    Pune District Education Association (PDEA) is well known educational society founded by the
+      dedicated team of social reformers lead by Late Shri. Baburaoji Gholap and has a standing of over 77 years in the
+      field of education. PDEA has received the prestigious, “Best Educational Institute Award” in the year 2000 by the
+      Government of Maharashtra for the remarkable achievements in the field of education and social work. PDEA imparts
+      education to rural and urban masses through Preprimary Schools (12), Primary Schools (13) Secondary Schools (55),
+      Subsidiary School (06), Higher Secondary Schools (29), Senior Colleges (08), Ayurved College and Research Center
+      (01), Pharmacy Colleges (02), Management Institutes (02), Polytechnic Institute (01), Engineering College (01),
+      Law College (01), Architecture (01) and D.Ed. College (01).
+      In the year 2006, inspired visionary and dynamic leader, Honorable Shri. Ajit Pawar took the charge as President
+      of PDEA. Under his able guidance, all branches of PDEA’s are now taking a global speed to reach the destination.
+    <br>
+    <br>
+    <h3><b>About Baburaoji Gholap College :</b></h3>
+    Baburaoji Gholap College runs 16 undergraduate courses and 11 postgraduate courses under the faculties of Arts,
+    Commerce, Science, Computer Science and Computer Application. In addition to conventional courses, there are 5 B.Voc. Degree courses in Fashion
+    Technology, Software Development, Beauty Therapy and Aesthetics, Retail Management and Travel and Tourism
+    Management. College also offers ‘Diploma in Rubber Chemistry and Processing’ under UGC Community College Scheme.
+    There are four Ph.D. Research centers in Economics, Physics, Chemistry and Environmental Science wherein 9 have
+    been awarded with Ph.D. since 2012 and 106 students are currently pursuing their doctoral degree. An excellent
+    ‘Sophisticated Instrumental Analysis Facility Centre (SIAFC)’ Laboratory for research activities is set up. The
+    college received general development assistance from UGC, New Delhi and also funded with DBT-Star college scheme
+    and DST-FIST scheme. Recently, college is selected for Unnant Bharat Abhiyan Scheme of UGC, New Delhi.<h3 id="scope"></h3>
+    The college is recipient of the ‘Best College Award’ by Savitribai Phule Pune University in 2010; and first prize
+    for “Jagar Janivancha” activity at University level by Government of Maharashtra in 2013 and 2014.<br><br>
+    
+    
+    <h3><b>Scope of The Conference :</b></h3>
+    In era of 21st century, advanced materials have shown tremendous potential for revolution in Science and Technology. Establishing the sustainable materials at scientific, technological and industrial levels needs the encroachment of fundamental and extrinsic knowledge from all fields of science. An interdisciplinary approach might be useful in understanding the various aspects of progresses in the sustainable materials.  
+    In view of this, the present international conference will be encompassing the expert guidance from distinguished academician, researchers, scientists and industrialist in the area of sustainable materials. The conference will give channel to share the ideas and views regarding the research outcomes in sustainable materials through the invited talk, oral presentation and poster presentation. The main objectives of the conference are:<br>
+    1.	To convene academicians and researchers from various colleges, universities, research institutes and multinational industries from the fields of sustainable materials. 
+   <br> 2.	To render a platform to research scholars and academicians for presenting, sharing and exchanging their research outcomes and ideas in the field of sustainable materials.
+    <br>3.	To create awareness about the recent developments in the field of sustainable materials.
+    <br>4.	To explore career opportunities and future scope in an interdisciplinary field of sustainable materials.<br><br>
+    
+    <h3><b>About Organizing Departments :</b></h3>
+    The departments of Botany, Physics, Chemistry, Mathematics, Statistics, Computer Science
+     and Electronics are concurrently involved in organization of present international conference.
+      The departments are actively involved in dissemination of scientific knowledge in Physical, Mathematical, Chemical and Life sciences at undergraduate level.
+      All the departments have faculty members with high end academic profile and dedicated to research activities in advanced areas of interest. 
+      Further, linkages with various industrial sectors are also in state of budding research practices.
+      <br>
+      <br>
+    <h3><b>About Pune City :</b></h3>
+    Pune is eighth largest metropolitan in Maharashtra state of India. Pune was once the center of power of Maratha Empire and the first capital of the great Maratha king Chatrapatti Shivaji Maharaj. 
+    It is center of knowledge and hence often known as the Oxford of the east.
+    The students from different states and also from various countries are completing their higher and doctoral education in field science, engineering medical and technology at different educational institutes and universities on Pune.
+    Pune is having more than hundred educational institutes and nine universities. Pune has various government institutes like NCL, C-MET, TIFR, NCRA, IUCAA, IISER, DRDO, IITM, NIV, NIC, HERML, TRDDC etc for higher education and advance research.
+    Pune also known as cultural capital of Maharashtra and there are many historic places like Shaniwar Wada, Lal Mahal and many museums like the Aga Khan Palace, Raja Kelkar Museum, National War museum, etc.
+    The weather of Pune is very pleasant. 
+    <br>
+    <br>
+    <h3><b>Conference Themes :</b></h3>
+
+    The conference is based on the themes mentioned below.<br>
+    1.	Processing, fabrication and characterization.<br>
+    2.	Functional modification of surfaces and interfaces.<br>	
+    3.	Sustainability and Societal Impact.<br>
+    4.	Mathematical modeling.<br>
+    5.	Materials for chemical/biological/physical applications.<br> 
+    6.	Energy storage and generation.<br> 
+    7.	Catalysis.<br>
+    8.	Molecular Biology.<br> 
+    9.	Smart electronics.<br> 
+    10.	Information Technology.<br><br> 
+
+    <h3><b>Oral and Poster presentation :</b></h3> 
+
+•	Selection of abstract for oral or poster presentation will be decided solely by organizing committee.<br>
+
+•	All selected papers will be given an opportunity to publish full length manuscript in special issue conference proceeding of  UGC approved peer reviewed journal with good impact factor (Between 0.5 to 5). Guest Editors will review all submitted manuscripts and editor will finalize the abstracts.<br>
+
+•	The amount (if any) for publication of manuscript in peer reviewed journal will be borne by authors only and intimated after the acceptance of the abstract for presentation.<br><br>   
+
+
+
+    
+    
+   <table >
+      <col width="500">
+      <col width="">
+      <h3 id="datesheading"><b>Important Dates :</b></h3>
+     <tr>   
+     <td>Dates For Conference </td>
+     <td>: 05th and 06th February 2019 </td>
+    </tr>
+    <tr>
+      <td>Last date for early bird registration </td>
+      <td>: 20th January 2019</td>
+    </tr>
+
+    <tr>
+        <td>Submission of Extended Abstract </td>
+        <td>:  20th January 2019 </td>
+      </tr>
+  
+      <tr>
+          <td>Acceptance of Abstract </td>
+          <td>:  25th January 2019 </td>
+        </tr>
+       </table><br>
+
+
+       <table >
+          <col width="500">
+          <col width="150">
+          <h3 id="datesheading"><b>Registration Fees :</b></h3>
+         <tr>   
+         <td>Category  </td>
+         <td>Indian (Rs)</td>
+         <td>Overseas (USD $)</td>
+        </tr>
+        <tr>
+          <td>Student  </td>
+          <td>: 750	</td>
+          <td>  100</td>
+        </tr>
+    
+        <tr>
+            <td>Academic Delegate	 </td>
+            <td>: 1500</td>
+            <td> 200</td>
+          </tr>
+      
+          <tr>
+              <td>Industry delegate  </td>
+              <td>: 3000</td>
+              <td>  400</td>
+            </tr>
+            
+           </table><br>
+          
+           <h5 style="color: #606e7f; font-family:inherit;">Accompanying delegates has to pay 50% of the fees of the respective category.</h5><br>
+           <h3 id="datesheading"><b>Accomodation :</b></h3>
+           <h2 id="linktopay"></h2>
+           <h5  style="color:#606e7f;">Accommodation can be arranged on prior request in selected hotels or hostels as per availability. Contact Person: Dr. S. V. Giramar : 9881407381</h5><br>
+
+           <h3 id="datesheading"><b> Mode of Payment :</b></h3>
+           <h5 style="color:#606e7f;"> The payment of any kind of fees can be done through:<br>
+           1.	Online payment through RTGS/NEFT/IMPS<br>
+            2.	Overseas delegates can transfer through Paypal /wire transfer <br><br>
+
+            <table>
+                <col width="500">
+                <col width="450">
+                <h5 style="color:#606e7f;" >Details of Bank Account :</h5>
+               <tr>   
+               <td>Account name	  </td>
+               <td>: Principal Baburaoji Gholap College, Sangvi</td>
+               
+              </tr>
+              <tr>
+                <td>Bank name   </td>
+                <td>: Union Bank of India </td>
+                
+              </tr>
+          
+              <tr>
+                  <td>Account number 		 </td>
+                  <td>: 546801010050303</td>
+                  
+                </tr>
+            
+                <tr>
+                    <td>Type of account 	 </td>
+                    <td>: Saving</td>
+                   
+                  </tr>
+                  
+                  <tr>
+                      <td>IFSC code  </td>
+                      <td>: MAHB0000118</td>
+                     
+                    </tr>
+                    <tr>
+                        <td>MICR code  </td>
+                        <td>: 411014012 </td>
+                       
+                      </tr>
+
+                      
+            </table><br>
+
+            <h5  style="color:#606e7f;">The receipt of the bank transaction should be mailed immediately and hard copy must be submitted at the time of registration.<br><br>  
+            3.	Cheque / Demand Draft in favor of <b>Principal, Baburoji Gholap College, Sangvi, Pune</b><br>
+            <h3 id="x2" ></h3>
+4.	Cash payment at the reception counter at the time of registration  </h5>
+          
+             </h5>
+  </div><br><br>
+
+  <center><h3 class="Chief-Patron container" align="center"><b>Chief-Patron</b></h3></center>
+
+
+
+
+
+
+
+  <section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg);">
+    <div class="overlay" ></div>
+    <div class="container" >
+      <div class="row d-md-flex justify-content-center" >
+        <div class="col-md-9 about-video text-center">
+          <img src="{{STATIC_URL}} /static/sir/images/Sharad_Pawar1.jpg" style="border-radius: 15px;margin-right: 600px;     margin-left: -289px; height: 225px;
+    width: 213px;">
+          <h1 id="sharadpawar">
+            Hon. Shri.Sharad Pawar
+          </h1>
+          <h2 id="sharadpawartext">Ex Agriculture Minister,GOI<br>
+            President,Rayat Shikshan Sanstha Satara,Maharashtra</h2><br>
+          <img src="{{STATIC_URL}} /static/sir/images/Ajit_pawar.jpg" style="border-radius: 15px;margin-top: -472px; margin-left: -304px;">
+          <h1 id="ajitpawar">
+            Hon. Shri.Ajit Pawar
+          </h1>
+          <h2 id="ajitpawartext">
+            Former Deputy Chief Minister, Government of Maharashtra <br>
+            President, Pune District Education Association, Maharashtra, India.
+          </h2>
+          <img src="{{STATIC_URL}} /static/sir/images/Supriya_Sule.jpg" style="border-radius: 15px;margin-top: -420px;margin-right: -300px;">
+          <h1 id="supriya">
+            Hon. Smt.Supriya Sule
+          </h1>
+          <h2 id="supriyatext">
+            Member of Parliament, Government of India.
+          </h2><br>
+          <img src="{{STATIC_URL}} /static/sir/images/Sunetra_pawar1.jpg" style="border-radius: 15px;margin-top: -445px;margin-right: -900px;     height: 222px;
+   width: 221px;">
+          <h1 id="sunetra">
+            Hon. Smt.Sunetra Pawar
+          </h1>
+          <h2 id="sunetratext">
+            Senate and Academic Council Member,Savitribai Phule Pune University, Pune
+
+
+          </h2><br>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <center><h3><b>Patron</b></h3>    
+  <b>Shri. Rajendra Ghadage</b><br>
+  Vice President, Pune District Education Association, Maharashtra, India.<br>  
+  <b>Adv. Shri. Sandeep Kadam</b><br>
+  Honorary Secretary, Pune District Education Association, Maharashtra, India.<br>  
+  <b>Adv. Shri. Mohanrao Deshmukh</b><br>
+  Treasurer, Pune District Education Association, Maharashtra, India.<br>  
+  <b>Shri. A. M. Jadhav</b><br>
+  Joint Secretary, Pune District Education Association, Maharashtra, India.<br>  
+  <b>Shri. L. M. Pawar</b><br>
+  Assistant Secretary, Pune District Education Association, Maharashtra, India.<br>  
+  <b>Dr. Nitin R. Karmalkar</b><br>
+  Vice Chancellor, Savitribai Phule Pune University, Pune<br>
+  <b id="Commitee">Dr. N. S. Umarani</b><br>
+  Pro-Vice Chancellor, Savitribai Phule Pune University, Pune<br>
+  <b>Dr. Vijay Narkhede</b><br>
+  Joint Director, Higher Education, Pune District, Pune.<br><br>
+  
+<h3><b>International Advisory Committee</b></h3> 
+
+<b>Dr Stefan Porembski</b><br>
+Professor, Department of Botany, University of Rostock, Rostock, Germany.<br> 
+<b>Dr Roger Farley</b><br> 
+Emeritus Professor in Biology, University of California, Santa Barbara.<br> 
+<b>Dr. Haithem Talb Hussain</b><br>
+Department of Applied Science (Physics), University of Technology, Iraq.<br>
+<b>Dr. Thamer Adnan Abdullah</b><br>
+Department of Applied Science (Chemistry), University of Technology, Iraq.<br>
+<b>Dr Bharat Kale</b><br> 
+Director, Centre for Materials for Electronics Technology [C-MET], Pune.<br>
+<b>Dr. Uday Lanke</b><br>
+Department of Physics, University of Saskatchewan, Saskatoon, Canada.<br>
+<b>Prof. Rajaram Mane</b><br> 
+Department of Physics, Swami Ramanand Teerth Marathwada University, Nanded.
+Visiting Professor, Pusan National University, South Korea.<br>
+<b>Dr. Manish Karandikar</b><br>
+General Manager, ACC Limited, Mumbai, Maharashtra, India.<br><br>
+  
+<h3><b>National Advisory Committee</b></h3>
+<b>Prof. A. D. Shaligram</b><br> Dean of Science, SPPU.<br>
+<b>Dr. Prafulla Pawar</b><br> Registrar, SPPU.<br>
+<b>Dr. Ashok Chavan</b><br> Director, Board of Examinations and Evaluation, SPPU.<br>
+<b>Dr. P. B. Vidyasagar</b><br> Former Vice-Chancellor SRTM University, Nanded.<br>
+<b>Dr. S. N. Pathan</b><br> Former Vice-Chancellor, RTM Nagpur University, Nagpur.<br> 
+<b>Dr. Avinash Kumbhar</b><br> Chairman, BoS in Chemistry, SPPU.<br>
+<b>Dr. M. A. More, Chairman</b><br> BoS in Physics, SPPU.<br> 
+<b>Dr. B. M. Gaikar, Chairman</b><br> BoS in Botany, SPPU.<br>
+<b>Dr. A. J. Khandagale</b><br> Chairman, BoS in Zoology, SPPU.<br>
+<b>Dr. S. B. Gaikwad</b><br> Chairman, BoS in Mathematics, SPPU.<br>
+<b>Prof. Sanjay Dhole</b><br> Chairman, BoS in Computer Science, SPPU.<br>
+<b>Prof. D. C. Gharpure</b><br> Chairman, BoS in Electronic Science, SPPU.<br>
+<b>Dr. S. R. Yadav</b><br>   Professor, Department of Botany, Shivaji University, Kolhapur.<br>
+<b>Dr. A. V. Ghule, Professor</b><br> Department of Chemistry, Shivaji University, Kolhapur.<br> 
+<b>Dr. Sukratu Barve</b><br> Centre for Modeling and Simulation (CMS), SPPU , Pune.<br>
+<b>Dr. Ahindra Nag</b><br> Associate Professor, IIT Kharagpur.<br>
+<b>Dr. Mrinal Deshpande</b><br> Vice Principal, HPT Arts and RYK Science College, Nashik.<br>
+<b>Prof. Surekha A. Kulkarni</b><br> Botany Dept, Rashtrasant Tukadoji Maharaj Nagpur University.<br>
+<br>
+
+<h3><b>Organizing committee</b></h3>
+<table>
+<h4 >Convener</h4>
+<h5 style="color:#606e7f;">Dr. Balkrishan N. Zaware, Principal, Baburaoji Gholap College, Sangvi, Pune.</td></tr></h5>
+<br><br>
+
+ 
+<table >
+  <col width="150">
+  <col width="150">
+  <col width="150">
+  <tr><td></td><h5>Organizing secretary</h5></td></tr> 
+ <tr>   
+ <td>Dr. L. K. Nikam</td>
+ <td>Dr. C. P. Hase</td>
+ <td>Mr. B. U. Kangude</td>
+</tr>
+<tr>
+  <td>Dr. V. M. Bansod</td>
+  <td>Mr. V. S. Ghare</td>
+  <td>  Mrs. Seema Chowhan</td>
+</tr>
+<tr>
+  <td></td><td>Ms. M. S. Misar</td>
+</tr>
+</table><br>
+<table>
+    <col width="150">
+    <col width="150">
+    <col width="150">
+<tr>
+  
+    <td></td>
+    <td><h5>Coordinators</h5></td>
+    <td></td>
+  </tr>
+
+  <tr>
+      <td>Dr. S. V. Jagtap </td>
+      <td>Dr. S. U. Ekar	</td>
+      <td>Dr. S. V. Giramkar</td>
+    </tr>
+    <tr>
+        <td>Mr. P. R. Yawale</td>
+        <td>Dr. R. B. Bhagat</td>
+        <td> Ms. Sonal Kadam</td>
+      </tr>
+</table><br>
+<table>
+    <col width="150">
+    <col width="150">
+    <col width="150">
+<tr>
+  
+    <td></td>
+    <td><h5>Members</h5></td>
+    <td></td>
+  </tr>
+      <tr>
+          <td>Dr. V. K .Varpe 	</td>
+          <td>Dr. M. N. Shewale	</td>
+          <td>  Dr. B. M. Pardeshi</td>
+        </tr>
+        <tr>
+            <td>Mr. V. A. Naikwadi	</td>
+            <td>Mrs. V. D. Pathare	</td>
+            <td>Dr. N. S. Giri</td>
+          </tr>
+
+        </table><br>
+   <table>
+      <col width="150">
+      <col width="150">
+      <col width="150">
+  <tr>
+    
+      <td></td>
+      <td><h5>Publication</h5></td>
+      <td></td>
+    </tr>
+        <tr>
+            <td>Dr. Y. B. Khollam</td>
+            <td>	Dr. D. M. Mahajan 	</td>
+            <td>  Mr. Vipul Ghemud</td>
+          </tr>
+        
+  
+     </table><br><br>
+   <h5 style="color:#606e7f;" id="schedule">		
+      Dr. S. K. Dhage, Vice Principal B.G. College, Sangvi and Chairman, BoS in Economics, SPPU.</td></tr></h5>
+<br><br>
+
+
+
+   <h3 id="datesheading" style="margin-left: -52px;"><b>Tentative Conference Schedule  </b></h3>
+           
+            <table>
+                <col width="200">
+                <col width="250">
+                <col width="100">
+                <col width="200">
+                <col width="250">
+                <tr>   
+                    <td style="color: black;"><b>Friday, 05 February 2019</b></td><td></td>
+                    <td></td>
+                    
+                    <td style="color: black;"><b>Saturday, 05 February 2019</b></td>
+                    <br>                   
+                
+               <tr>   
+               <td>08.30 -09.30 hrs  </td>
+               <td>: Registration and Breakfast </td>
+       <td></td>
+               <td>08.30 -09.30 hrs  </td>   
+               <td>: Breakfast </td>            
+              </tr>
+              <tr>
+                <td>09.30 - 11.00 hrs </td>
+                <td>: Inauguration and Keynote address</td>
+                <td></td>
+                <td>09.30 - 11.30 hrs </td>
+                <td>: Plenary lectures</td>
+                
+              </tr>
+          
+              <tr>
+                  <td>11.00 – 11.15 hrs  </td>
+                  <td>: Tea</td>
+                  <td></td>
+                  <td>11.30 - 11.45 hrs </td>
+                  <td>: Tea</td>
+                </tr>
+            
+                <tr>
+                    <td>11.15 - 13.15 hrs </td>
+                    <td>: Plenary lectures </td>
+                    <td></td>
+                    <td>11.45 - 13.00 hrs 	 </td>
+                    <td>: Plenary lectures </td>
+                  </tr>
+                  
+                  <tr>
+                      <td>13.15 - 14.00 hrs</td>
+                      <td>: Lunch </td>
+                      <td></td>
+                      <td>13.00 - 14.00 hrs</td>
+                      <td>: Lunch </td> 
+                    </tr>
+                    <tr>
+                        <td>14.00 - 16.00 hrs </td>
+                        <td>: Plenary lectures </td>
+                        <td></td>
+                        <td>14.00 - 16.00 hrs </td>
+                        <td>: Plenary lectures </td>
+                      </tr>
+                      <tr>
+                          <td>16.00 – 16.15 hrs</td>
+                          <td>: 	Tea</td>
+                          <td></td>
+                          <td>16.00 – 16.15 hrs	</td>
+                          <td>: Tea </td>
+                        </tr>
+                        <tr>
+                            <td>16.15 - 18.15 hrs  </td>
+                            <td>: Poster and oral presentation</td>
+                            <td></td>
+                            <td>16.15 - 17.30 hrs </td>
+                            <td>: Valedictory function  </td>
+                          </tr>
+                          <tr>
+                              <td>18.15 – 19.15 hrs </td>
+                              <td>: 	Cultural Program </td>
+                             
+                            </tr>
+                            <tr>
+                                <td>20.00 - 21.00 hrs </td>
+                                <td>: Dinner</td>
+                               
+                              </tr>
+</table> 
+
+</center>
+  
+<h3 id="spons"></h3>
+  <section class="ftco-section testimony-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+          <!--<h3 id="spons" style=" margin-top: -56px; color: white">spons</h3>-->
+        <div class="col-md-7 heading-section ftco-animate text-center">
+         
+          <h3 id=sponsor class="mb-4" style="margin-right: 91px;"><b>Sponsors By</b></h3>
+          
+          <img src="{{STATIC_URL}} /static/sir/images/sppu_logo1.jpg" style="border-radius: 15px;margin-top: 1px;margin-right: 599px;height: 195px; margin-left: -109px;">
+          <h1 class="uniname">Savitribai Phule Pune University</h1>
+          <img src="{{STATIC_URL}} /static/sir/images/pdealogo.jpg" style="border-radius: 15px;margin-top: -306px;margin-left: 453px;height: 195px;">
+          <h1 class="pdeaname">Pune District Education Association </h1>
+        </div>     
+      </div>
+
+<!--footer starts from here-->
+ 
+</section>
+<a href="#home123"><img src="{{STATIC_URL}} /static/sir/images/top.png" style="height: 35px;margin-bottom: 22px;margin-right: -91%;margin-left: 96%;" "></a>
+<h3 id="venue1" style="color: white"></h3>
+  <footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/babu1.jpg); background-attachment:fixed;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-3">
+         
+        </div>
+        <div class="col-md-4">
+ 
+        </div>
+      
+        <div class="col-md-3">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2" style="margin-left: -221px;">Venue</h2>
+            <div class="block-23 mb-3">
+              <ul     style="margin-left: -434px;">
+                <li><span class="text">Yashwantrao Chavan Academy of Development Administration (YASHADA)</span></li>
+                <li><a href="#"><span class="text">(Administrative Training Institute of the Government of Maharashtra)</span></a></li>
+                <li><a href="#"></span><span class="text address">Rajbhavan Complex, Baner Road, Pune 411 007, </span></a></li>
+                <li><a href="#"><span class="text">Maharashtra, India </span></a></li>
+                <li><a href="#"><img src="{{STATIC_URL}} /static/sir/images/yashda.jpg" style="height: 250px; width: 550px;"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-2">
+          <div class="ftco-footer-widget mb-4 ml-md-4" style="    margin-left: -6.5rem !important;margin-top: -491px;">
+           <h2 class="ftco-heading-2" id="venue">Have a Questions?</h2>
+           <ul class="list-unstyled">
+             <li style="font-size: 14px;"><a href="#venue" class="py-2 d-block"><span class="icon icon-phone" style="color: white"></span><span class="text" style="font-size: 16px;color: rgba(255, 255, 255, 0.7);" > &nbsp; + 91 020 25608000</span></a></li>
+             <li><a href="#x" target=".welcome container" class="py-2 d-block"  ><span class="icon icon-phone" style="color:white ;"></span><span class="text" style="font-size: 16px;color: rgba(255, 255, 255, 0.7);"> &nbsp; Fax  + 91 02025608100 </span></a></li>
+             <li><a href="#x2" class="py-2 d-block"><span class="icon icon-envelope" style="color: white;"></span><span class="text"style="font-size:16px;color: rgba(255, 255, 255, 0.7);">&nbsp; contact@yashada.org</span></li>
+             
+            
+           </ul>
+         </div>
+         <!--Css for Google Maps-->
+         <style>
+            .mapouter{text-align:right;height:500px;width:600px;}
+            .gmap_canvas {
+               overflow: hidden;
+              background: none!important;
+              height: 450px;
+              width: 392px;
+              margin-left: 135%;
+              margin-top: -53%}
+            </style>
+            <!--google Maps-->
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="{{STATIC_URL}} /static/sir/https://maps.google.com/maps?q=Yashwantrao%20Chavan%20Academy%20of%20Development%20Administration%20(YASHADA)%20(Administrative%20Training%20Institute%20of%20the%20Government%20of%20Maharashtra)%20Rajbhavan%20Complex%2C%20Baner%20Road%2C%20Pune%20411%20007%2C%20&t=&z=13&ie=UTF8&iwloc=&output=embed"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                
+              </div>
+            </div>
+       </div>
+      <div class="row">
+        
+        <div class="col-md-12 text-center">
+
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Design And Developed By B.G College Students </p>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </footer>
+  
+  
+
+
+  </div>
+  </div>
+  </div>
+  </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+  <script src="{{STATIC_URL}} /static/sir/js/jquery.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/popper.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/bootstrap.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/jquery.easing.1.3.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/jquery.waypoints.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/jquery.stellar.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/owl.carousel.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/jquery.magnific-popup.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/aos.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/jquery.animateNumber.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/bootstrap-datepicker.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/jquery.timepicker.min.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/google-map.js"></script>
+  <script src="{{STATIC_URL}} /static/sir/js/main.js"></script>
+
+</body>
+
+</html>
